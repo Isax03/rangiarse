@@ -3,45 +3,54 @@
 <head>
 	<title>Rangiete</title>
 	<style>
-		body {
+		.container {
 			background-color: #363636;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 100vh;
-			animation: pageLoad 1s ease-in-out forwards;
+			animation: bodyLoad 1.5s ease-in-out forwards;
 		}
 
-		span {
+		.title {
 			font-size: 100px;
 			font-weight: bold;
 			font-family: 'Georgia';
 			color: #cc25ff;
 
-			animation: pageLoad 1s ease-in-out forwards;
+			animation: textLoad 1.25s ease-in-out forwards;
 		}
 
-		@keyframes pageLoad {
+		@keyframes textLoad {
 			0% {
 				opacity: 0;
-				gap: 0px;
 			}
 
 			100% {
 				opacity: 1;
-				gap: 30px;
+			}
+		}
+		@keyframes bodyLoad {
+			0% {
+				gap: 0px;
+			}
+
+			100% {
+				gap: 60px;
 			}
 		}
 	</style>
 </head>
 <body>
-	<span>R</span>
-	<span>A</span>
-	<span>N</span>
-	<span>G</span>
-	<span>I</span>
-	<span>E</span>
-	<span>T</span>
-	<span>E</span>
+	<div class="container">
+		<span class="title">R</span>
+		<span class="title">A</span>
+		<span class="title">N</span>
+		<span class="title">G</span>
+		<span class="title">I</span>
+		<span class="title">E</span>
+		<span class="title">T</span>
+		<span class="title">E</span>
+	</div>
 </body>
 </html>
